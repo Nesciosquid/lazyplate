@@ -1,0 +1,46 @@
+{
+  "name": "lazyplate",
+  "devDependencies": {
+    "babel": ">=5.5.5",
+    "babel-core": "^5.8.24",
+    "babel-eslint": "^6.0.5",
+    "babel-loader": "^5.3.2",
+    "babelify": ">=6.1.2",
+    "browserify": ">=10.2.4",
+    "eslint": "^2.13.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.9.2",
+    "eslint-plugin-jsx-a11y": "^1.5.3",
+    "eslint-plugin-react": "^5.2.2",
+    "expect": "^1.20.1",
+    "gh-pages": "^0.11.0",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2",
+    "redux-devtools": "^3.3.1",
+    "webpack": "^1.12.1"
+  },
+  "dependencies": {
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "version": "0.1.0",
+  "description": "Because I just don't want to set this up again.",
+  "main": "",
+  "scripts": {
+    "start": "webpack-dev-server --content-base ./build/",
+    "build": "webpack",
+    "deploy": "npm run build & gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nesciosquid/lazyplate.git"
+  },
+  "keywords": [],
+  "author": "Aaron W. Heuckroth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nesciosquid/lazyplate/issues"
+  },
+  "homepage": "https://github.com/Nesciosquid/lazyplate#readme"
+}
