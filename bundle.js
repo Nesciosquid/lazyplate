@@ -23007,13 +23007,13 @@
 	  value: true
 	});
 	var changeText = function changeText(state) {
-	  var newText = arguments.length <= 1 || arguments[1] === undefined ? 'Enter some text!' : arguments[1];
+	  var newText = arguments.length <= 1 || arguments[1] === undefined ? 'Default Text' : arguments[1];
 	  return newText;
 	};
 
 	// reducer
 	var storedText = function storedText(state, action) {
-	  if (state === undefined) state = 'Default Text';
+	  if (state === undefined) state = 'Enter some text!';
 
 	  switch (action.type) {
 	    case 'STORED_TEXT_CHANGE':
